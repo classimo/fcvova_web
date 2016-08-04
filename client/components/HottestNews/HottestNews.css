@@ -1,0 +1,21 @@
+.HottestNews {
+  height: 100%;
+  position: relative;
+  margin: 1.5rem 0; }
+  .HottestNews img {
+    width: 100%; }
+  .HottestNews .cover {
+    position: absolute;
+    bottom: 0;
+    background: rgba(55, 52, 53, 0.85);
+    width: 100%;
+    color: #fff; }
+    .HottestNews .cover h4 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-left: 1.4rem; }
+    .HottestNews .cover h5 {
+      font-size: 1.6rem;
+      margin-left: 1.4rem; }
+
+/*# sourceMappingURL=HottestNews.css.map */

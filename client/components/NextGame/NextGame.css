@@ -1,0 +1,36 @@
+.NextGame {
+  padding: 0 1.5rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  height: 100%; }
+  .NextGame span {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.6rem;
+    width: 100%;
+    display: block;
+    margin: .5rem 0; }
+    .NextGame span.time {
+      color: #F44336; }
+  .NextGame .team-logos {
+    margin: -2rem 0 0 0; }
+    .NextGame .team-logos .away-team-logo-wrapper {
+      display: inline-block;
+      width: 33.3%; }
+    .NextGame .team-logos .home-team-logo-wrapper {
+      display: inline-block;
+      width: 33.3%; }
+    .NextGame .team-logos img {
+      vertical-align: 0;
+      max-height: 10rem; }
+      .NextGame .team-logos img.away-team-logo {
+        float: right; }
+    .NextGame .team-logos .vs {
+      font-weight: bold;
+      font-size: 2rem;
+      display: inline-block;
+      width: 33.3%;
+      text-align: center;
+      vertical-align: 4rem; }
+
+/*# sourceMappingURL=NextGame.css.map */

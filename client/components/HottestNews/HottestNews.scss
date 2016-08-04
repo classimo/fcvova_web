@@ -1,0 +1,24 @@
+.HottestNews{
+  height: 100%;
+  position: relative;
+  margin: 1.5rem 0;
+  img{
+    width:100%;
+  }
+  .cover{
+    position: absolute;
+    bottom:0;
+    background: rgba(55,52,53, .85);
+    width: 100%;
+    color: #fff;
+    h4{
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-left: 1.4rem;
+    }
+    h5{
+      font-size: 1.6rem;
+      margin-left: 1.4rem;
+    }
+  }
+}

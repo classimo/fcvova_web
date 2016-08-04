@@ -1,0 +1,57 @@
+.Logo{
+  position: absolute;
+  width: 7.4em;
+  height: 7.4em;
+  background-color: #373435;
+  border-radius: 100%;
+  z-index: 1;
+  .logo-svg{
+    margin-top: .2em;
+    margin-right: .2em;
+    border-radius: 100%;
+    max-width: 7em;
+    max-height: 7em;
+
+    .fil1 {
+      fill:#FEFEFE;
+        }
+    .fil4 {
+      fill:#373435;
+
+    }
+    .fil2 {
+      fill:#FEFEFE;
+
+    }
+    .fil3 {
+      fill:#FEFEFE;
+
+    }
+    .fil0 {
+      fill:#373435;
+
+    }
+    .inner {fill:#373435;}
+    .inner-group {
+      fill:#373435;
+
+    }
+
+  }
+  &:hover{
+
+    box-shadow: 0 3px 10px 1px rgba(0,0,0,.48);
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  &:active{
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    box-shadow: 0 2px 7px .5px rgba(0,0,0,.55);
+
+  }
+}
