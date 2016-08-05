@@ -14,18 +14,21 @@ import Title from '../../../components/Title/Title';
 import LeagueTable from '../../../components/LeagueTable/LeagueTable';
 import HottestNews from '../../../components/HottestNews/HottestNews';
 import NextGame from '../../../components/NextGame/NextGame';
+import PostsList from '../../../components/Post/components/PostList';
 
 // Import Actions
-import { fetchLeagueTeams, fetchTeamFixtures } from '../Actions';
+import { fetchLeagueTeams, fetchTeamFixtures, fetchPosts } from '../Actions';
 
 // Import Selectors
 import { getLeagueTeams } from '../TeamsReducer';
 import { getNextTeamFixture, getTeamFixtures } from '../FixturesReducer';
+import { getPosts } from '../PostReducer';
 
 class MainPage extends Component {
   componentDidMount() {
     this.props.dispatch(fetchLeagueTeams(70));
     this.props.dispatch(fetchTeamFixtures(17));
+    this.props.dispatch(fetchPosts());
   }
 
   render() {
@@ -42,6 +45,7 @@ class MainPage extends Component {
           <Col md="8">
             <Title><FormattedMessage id="news_title" /></Title>
             <HottestNews post={mockPost} />
+            <PostsList posts={this.props.posts} />
           </Col>
           <Col md="4">
             <Title><FormattedMessage id="nextGame" /></Title>
@@ -58,12 +62,14 @@ class MainPage extends Component {
 // Actions required to provide data for this component to render in sever side.
 MainPage.need = [() => { return fetchLeagueTeams(70); }];
 MainPage.need = [() => { return fetchTeamFixtures(17); }];
+MainPage.need = [() => { return fetchPosts(); }];
 
 // Retrieve data from store as props
 function mapStateToProps(state) {
   return {
     teams: getLeagueTeams(state),
     fixtures: getTeamFixtures(state),
+    posts: getPosts(state),
   };
 }
 
@@ -93,6 +99,11 @@ MainPage.propTypes = {
     homeTeamLogo: PropTypes.string.isRequired,
     awayTeamLogo: PropTypes.string.isRequired,
   }).isRequired,
+  posts: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.string.isRequired,
+  })).isRequired,
   dispatch: PropTypes.func.isRequired,
 };
 

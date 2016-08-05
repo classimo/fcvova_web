@@ -4,8 +4,8 @@
 import React, { PropTypes } from 'react';
 
 // Import Components
-import LeagueTableHeader from './LeagueTableHeader/BigLeagueTableHeader';
-import LeagueTableRow from './LeagueTableRow/LeagueTableRow';
+import LeagueTableHeader from './components/LeagueTableHeader/BigLeagueTableHeader';
+import LeagueTableRow from './components/LeagueTableRow/LeagueTableRow';
 
 // Import Style
 import styles from './LeagueTable.css';

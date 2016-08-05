@@ -10,7 +10,7 @@ function BigLeagueTableHeader() {
   return (
     <tr>
       <th colSpan="3">
-        <img src="/images/teamLogos/SFL_big.png" alt="SFL" />
+        <img src="/images/sfl.png" alt="SFL" />
         {/* <FormattedMessage id="team_name" /> */}
       </th>
       <th><FormattedMessage id="team_played" /></th>

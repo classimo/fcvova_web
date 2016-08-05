@@ -11,6 +11,7 @@ export default {
     authorName: 'Autoriaus vardas',
     postTitle: 'Įrašo antraštė',
     postContent: 'Įrašo turinys',
+    readMore: 'Skaityti daugiau...',
     submit: 'Įšsaugoti',
     comment: `user {name} {value, plural,
     	  =0 {be komentarų}
