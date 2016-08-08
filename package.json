@@ -111,8 +111,7 @@
     "sinon": "^1.17.4",
     "style-loader": "^0.13.1",
     "supertest": "^1.2.0",
-    "url-loader": "^0.5.7",
-
+    "url-loader": "^0.5.7"
   },
   "engines": {
     "node": ">=4"
