@@ -7,6 +7,7 @@ if (process.env.NODE_ENV === 'production') {
   process.env.webpackChunkAssets = JSON.stringify(require('./dist/chunk-manifest.json'));
   // In production, serve the webpacked server file.
   require('./dist/server.bundle.js');
+  process.env.MONGO_URL = "mongodb://paulius:ALUSalus666@ds029655.mlab.com:29655/heroku_zcbm1p3w";
 } else {
   // Babel polyfill to convert ES6 code in runtime
   require('babel-register')({
