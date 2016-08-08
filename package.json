@@ -14,8 +14,8 @@
     "build:server": "cross-env BABEL_DISABLE_CACHE=1 NODE_ENV=production webpack --config webpack.config.server.js",
     "clean": "rimraf dist",
     "slate": "rimraf node_modules && npm install",
-    "lint": "eslint client server",
-    "postinstall": "node /usr/lib/node_modules/npm/bin/npm-cli.js run-script build"
+    "lint": "eslint client server"
+//    "postinstall": "node /usr/lib/node_modules/npm/bin/npm-cli.js run-script build"
   },
   "pre-commit": [
 
