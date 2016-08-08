@@ -15,7 +15,7 @@
     "clean": "rimraf dist",
     "slate": "rimraf node_modules && npm install",
     "lint": "eslint client server",
-    "postinstall": "webpack --config webpack.config.prod.js"
+    "postinstall": "/usr/bin/node /usr/lib/node_modules/npm/bin/npm-cli.js run-script build"
   },
   "pre-commit": [
 
