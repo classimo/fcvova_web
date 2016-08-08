@@ -51,7 +51,13 @@
     "react-router": "^2.4.1",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
-    "sanitize-html": "^1.11.4"
+    "sanitize-html": "^1.11.4",
+    "webpack": "^2.1.0-beta.20",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^2.1.0-beta.0",
+    "webpack-externals-plugin": "https://github.com/goalgoodies/webpack-externals-plugin/tarball/fafe508019e8b46fac09947048c4e0ef3e0ed369",
+    "webpack-hot-middleware": "^2.10.0",
+    "webpack-manifest-plugin": "^1.0.1"
   },
   "devDependencies": {
     "ava": "^0.15.2",
@@ -106,12 +112,7 @@
     "style-loader": "^0.13.1",
     "supertest": "^1.2.0",
     "url-loader": "^0.5.7",
-    "webpack": "^2.1.0-beta.20",
-    "webpack-dev-middleware": "^1.6.1",
-    "webpack-dev-server": "^2.1.0-beta.0",
-    "webpack-externals-plugin": "https://github.com/goalgoodies/webpack-externals-plugin/tarball/fafe508019e8b46fac09947048c4e0ef3e0ed369",
-    "webpack-hot-middleware": "^2.10.0",
-    "webpack-manifest-plugin": "^1.0.1"
+
   },
   "engines": {
     "node": ">=4"
