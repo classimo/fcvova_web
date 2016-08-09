@@ -5,10 +5,10 @@
 if (process.env.NODE_ENV === 'production') {
   process.env.webpackAssets = JSON.stringify(require('./dist/manifest.json'));
   process.env.webpackChunkAssets = JSON.stringify(require('./dist/chunk-manifest.json'));
-  process.env.PORT = 3000;
+  //process.env.PORT = 3000;
   // In production, serve the webpacked server file.
   require('./dist/server.bundle.js');
-  process.env.MONGO_URL = "mongodb://paulius:ALUSalus666@ds029655.mlab.com:29655/heroku_zcbm1p3w";
+  process.env.MONGODB_URI = "mongodb://paulius:ALUSalus666@ds029655.mlab.com:29655/heroku_zcbm1p3w";
 } else {
   // Babel polyfill to convert ES6 code in runtime
   require('babel-register')({

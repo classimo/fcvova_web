@@ -39,7 +39,7 @@ import stadiums from './routes/stadium.routes';
 import serverConfig from './config';
 
 // MongoDB Connection
-mongoose.connect(serverConfig.mongoURL, (error) => {
+mongoose.connect(serverConfig.MONGODB_URI, (error) => {
   if (error) {
     console.error('Please make sure Mongodb is installed and running!'); // eslint-disable-line no-console
     throw error;
