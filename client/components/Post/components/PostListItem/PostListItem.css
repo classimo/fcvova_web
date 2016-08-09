@@ -1,6 +1,6 @@
 .single-post {
   margin: 0;
-  padding: 1.5rem 0;
+  padding: 1.2rem 0;
   border-radius: 2px;
 }
 
@@ -14,7 +14,7 @@
 .post-title a{
   text-decoration: none;
   color: #373435;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .author-name{
@@ -25,10 +25,11 @@
 }
 
 .post-desc{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #373435;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   margin-left: 1.5rem;
+  margin-top: 8px;
 }
 
 .post-action a{
@@ -56,6 +57,6 @@
 }
 
 .post-detail .post-desc{
-  font-size: 16px;
+  font-size: 14px;
   color: #555;
 }
