@@ -40,7 +40,8 @@ module.exports = {
         test: /\.css$/,
         exclude: /node_modules/,
         loader: 'style-loader!css-loader?localIdentName=[name]__[local]__[hash:base64:5]&modules&importLoaders=1&sourceMap!postcss-loader',
-      }, {
+      },
+      {
         test: /\.css$/,
         include: /node_modules/,
         loaders: ['style-loader', 'css-loader'],
@@ -59,8 +60,13 @@ module.exports = {
         loader: 'json-loader',
       },
       {
-        test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
-        loader : 'file?name=public/fonts/[name].[ext]'
+        test   : /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url',
+        query: {
+          limit: 50000,
+          mimetype: 'application/font-woff',
+          name: './fonts/[hash].[ext]'
+        }
       },
     ],
   },
