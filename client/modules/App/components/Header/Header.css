@@ -49,9 +49,10 @@
 }
 
 .language-switcher li {
+  //font-family: "Gotham Bold";
   display: inline-block;
   margin: 20px 10px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 5px 5px;
   cursor: pointer;
   color: #fff;
