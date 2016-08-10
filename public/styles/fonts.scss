@@ -4,3 +4,16 @@
   font-weight: 400;
   src: url('../fonts/Lintel-Black.woff') format('woff'), local('Lintel Black'), local('LintelBlack');
 }
+
+@font-face {
+  font-family: 'Gotham Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Gotham/Bold.woff') format('woff'), local('Gotham Bold'), local('GothamBold');
+}
+@font-face {
+  font-family: 'Gotham Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Gotham/gotham-medium-webfont.woff') format('woff'), local('Gotham Medium'), local('GothamMedium');
+}
