@@ -27,7 +27,7 @@ PostList.propTypes = {
     slug: PropTypes.string.isRequired,
     cuid: PropTypes.string.isRequired,
   })).isRequired,
-  handleDeletePost: PropTypes.func.isRequired,
+  // handleDeletePost: PropTypes.func.isRequired,
 };
 
 export default PostList;

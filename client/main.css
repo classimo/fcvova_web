@@ -1,6 +1,8 @@
 /*
   Global CSS file
 */
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -8,6 +10,9 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	line-height: normal;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 ::-webkit-input-placeholder {
@@ -32,5 +37,8 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-size: 14px;
   color: #373435;
-
+}
+@font-face {
+  font-family: "Lintel Black";
+  src: url('http://localhost:3000/fonts/Lintel-Black.woff');
 }

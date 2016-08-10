@@ -1,11 +1,12 @@
 .Title {
   background: #F44336;
-  padding-left: 1.4rem; }
+  padding-left: 1.4rem;
+  margin: 0; }
   .Title h4 {
+    font-family: "Lintel Black";
     font-size: 1.8rem;
     line-height: 3rem;
-    font-weight: 900;
-    color: #fff;
-    margin: 0; }
+    font-weight: 100;
+    color: #fff; }
 
 /*# sourceMappingURL=Title.css.map */

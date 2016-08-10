@@ -88,7 +88,7 @@ MainPage.propTypes = {
     points: PropTypes.number.isRequired,
     logo: PropTypes.string.isRequired
   })).isRequired,
-  fixtures: PropTypes.shape({
+  fixtures: PropTypes.arrayOf({
     homeTeamId: PropTypes.number.isRequired,
     awayTeamId: PropTypes.number.isRequired,
     leagueId: PropTypes.number.isRequired,
