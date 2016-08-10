@@ -40,5 +40,5 @@ body {
 }
 @font-face {
   font-family: "Lintel Black";
-  src: url('http://localhost:3000/fonts/Lintel-Black.woff');
+  src: url('https://fcvovaweb.herokuapp.com/fonts/Lintel-Black.woff');
 }
