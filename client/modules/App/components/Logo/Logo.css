@@ -1,16 +1,17 @@
 .Logo {
   position: absolute;
-  width: 7.4em;
-  height: 7.4em;
+  width: 10rem;
+  height: 10rem;
   background-color: #373435;
   border-radius: 100%;
-  z-index: 1; }
+  z-index: 3;
+  box-shadow: 0 2px 7px 0.5px rgba(0, 0, 0, 0.55); }
   .Logo .logo-svg {
-    margin-top: .2em;
-    margin-right: .2em;
+    margin-top: .3rem;
+    margin-right: .3rem;
     border-radius: 100%;
-    max-width: 7em;
-    max-height: 7em; }
+    max-width: 9.4rem;
+    max-height: 9.4rem; }
     .Logo .logo-svg .fil1 {
       fill: #FEFEFE; }
     .Logo .logo-svg .fil4 {
@@ -36,6 +37,6 @@
     -moz-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
-    box-shadow: 0 2px 7px 0.5px rgba(0, 0, 0, 0.55); }
+    box-shadow: none; }
 
 /*# sourceMappingURL=Logo.css.map */

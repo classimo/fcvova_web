@@ -2,7 +2,6 @@
   Global CSS file
 */
 
-
 *{
   margin: 0;
   padding: 0;
@@ -33,8 +32,9 @@ input:-moz-placeholder {
 }
 
 body {
-  background: #FFF;
-  font-family: "Gotham Book", sans-serif;
-  font-size: 14px;
+  background-color: #e9eaed !important;
+  //font-family: "Gotham Book", sans-serif;
+  //font-size: 14px;
   color: #373435;
+
 }

@@ -1,0 +1,349 @@
+    @-webkit-keyframes btn_spin {
+        100% {
+            -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+        }
+    }
+
+    @keyframes btn_spin {
+        100% {
+            -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+        }
+    }
+
+    a.btn {
+        display: block;
+        text-align: center;
+    }
+
+    a.btn, button.btn {
+        @include headerText;
+        // Use height and line-height methodology to set the height of buttons,
+        // rather than padding. This means button height will be consistent with
+        // input controls, allowing us to render controls inline.
+        background-color: $greyscale_20;
+        //background-repeat: repeat-x;
+        border: 1px solid $greyscale_30;
+        border-radius: 0.1rem;
+        box-sizing: border-box;
+        //color: Inherit from body
+        font-size: $font_size_small;
+        height: 2.4rem; // line-height + border-top-width + border-bottom-width
+        line-height: 2.4rem;
+        margin: 0 0 0.25rem;
+        //padding: 0 0.75rem;
+        padding: 0em 1.2rem;
+        position: relative;
+        transition: box-shadow 100ms ease-out;
+        background: -webkit-linear-gradient($white, $greyscale_20);
+        background: -o-linear-gradient($white, $greyscale_20);
+        background: -moz-linear-gradient($white, $greyscale_20);
+        background: linear-gradient($white, $greyscale_20);
+    }
+
+    a.btn.btn-small, button.btn.btn-small {
+        font-size: $font_size_x_small;
+        line-height: 1.9rem;
+        letter-spacing: 0.01rem;
+        height: 1.8rem; // line-height + border-top-width + border-bottom-width
+
+        &.bid{
+                height: 2.0rem;
+                line-height: 2.1rem;
+        }
+
+
+        &.vote{
+            border: 1px solid hsl(148, 100%, 35%);
+            color: rgb(0, 209, 98);
+            background-color: hsl(197, 100%, 97%);
+            background: linear-gradient(hsl(148, 100%, 97%),hsl(148,100%,97%));
+
+            &:hover {
+                box-shadow: 1px 2px 4px rgba(0, 209, 83, 0.15);
+            }
+        }
+
+        &.vote[active] {
+            border: 1px solid hsl(148, 100%, 35%);
+            color: rgb(0, 209, 98);
+            background-color: hsl(197, 100%, 97%);
+            background: linear-gradient(hsl(148, 100%, 97%),hsl(148,100%,97%));
+            box-shadow: 1px 2px 4px rgba(0, 209, 83, 0.15);
+        }
+
+        &.voted{
+            border: 1px solid hsl(197, 100%, 38%);
+            color: hsl(197, 100%, 38%);
+            background-color: hsl(197, 100%, 97%);
+            background: linear-gradient(hsl(195,100%, 97%),hsl(195,100%,97%));
+            &:hover {
+                box-shadow: 1px 2px 4px rgba(0, 110, 153, 0.15);
+            }
+        }
+    }
+
+    a.btn.btn-thin, button.btn.btn-thin {
+        @include bodyText;
+        font-size: $font_size_x_small;
+        height: 1.5rem; // line-height + border-top-width + border-bottom-width
+        line-height: 1.4rem;
+    }
+
+    a.btn.btn-large, button.btn.btn-large {
+        font-size: $font_size_default;
+        height: 2.8rem; // line-height + border-top-width + border-bottom-width
+        line-height: 2.7rem;
+    }
+
+    a.btn.btn-inline, button.btn.btn-inline {
+        display: inline-block; // In case float is removed
+        float: left;
+        margin: 0 1rem 0.25rem 0;
+        width: auto;
+        line-height: 2.1rem;
+        letter-spacing: 0.01rem;
+        height: 2rem;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.btn-center{
+            width:100%;
+        }
+    }
+
+    a.btn:hover, button.btn:hover {
+        box-shadow: 0 0 7px hsla(216, 8%, 74%, 1);
+    }
+
+    a.btn:focus, button.btn:focus {
+        border-color: $greyscale_40;
+        box-shadow: 0 0 7px hsla(216, 8%, 74%, 1);
+        transition: none;
+
+    }
+
+    a.btn:active, button.btn:active {
+        border-color: $greyscale_40;
+        transition: none;
+    }
+
+    button.btn[disabled] {
+        background-color: $greyscale_10;
+        border-color: $greyscale_30;
+        box-shadow: none;
+        color: $greyscale_30;
+    }
+
+    // Primary:§
+
+    a.btn.btn-primary, button.btn.btn-primary {
+        background-color: $bluescale_60;
+        border-color: $bluescale_90;
+        color: $white;
+        text-shadow: 1px 1px 1px $greyscale_100;
+        background: linear-gradient($bluescale_60, $bluescale_90);
+        background: -webkit-linear-gradient($bluescale_60, $bluescale_90);
+        background: -o-linear-gradient($bluescale_60, $bluescale_90);
+        background: -moz-linear-gradient($bluescale_60, $bluescale_90);
+        &:hover {
+            text-shadow: none;
+            border: 1px solid $white;
+        }
+    }
+
+    a.btn.btn-success, button.btn.btn-success {
+        background-color: $ok;
+        border-color: $greenscale_60;
+        color: $white;
+        text-shadow: 1px 1px 1px $greyscale_100;
+        background: -webkit-linear-gradient($ok, $greenscale_60);
+        background: -o-linear-gradient($ok, $greenscale_60);
+        background: -moz-linear-gradient($ok, $greenscale_60);
+        background: linear-gradient($ok, $greenscale_60);
+    }
+
+    a.btn.btn-primary:hover, button.btn.btn-primary:hover {
+        // box-shadow: 0 0 7px hsla(197, 100%, 30%, 0.75);
+    }
+
+    a.btn.btn-primary:focus, button.btn.btn-primary:focus {
+        border-color: $bluescale_100;
+        box-shadow: 0 0 7px hsla(197, 100%, 30%, 0.75);
+    }
+
+    a.btn.btn-primary:active, button.btn.btn-primary:active {
+        border-color: $bluescale_100;
+    }
+
+    a.btn.btn-primary[disabled],button.btn.btn-primary[disabled] {
+        background-color: $greyscale_20;
+        border-color: $greyscale_30;
+        background: -webkit-linear-gradient($white, $greyscale_20);
+        background: -o-linear-gradient($white, $greyscale_20);
+        background: -moz-linear-gradient($white, $greyscale_20);
+        background: linear-gradient($white, $greyscale_20);
+        box-shadow: none;
+        color: $greyscale_30;
+        text-shadow: none;
+        &.btn-waiting{
+            background-color: $bluescale_60;
+            border-color: $bluescale_90;
+            background: linear-gradient($bluescale_60, $bluescale_90);
+            background: -webkit-linear-gradient($bluescale_60, $bluescale_90);
+            background: -o-linear-gradient($bluescale_60, $bluescale_90);
+            background: -moz-linear-gradient($bluescale_60, $bluescale_90);
+
+        }
+    }
+
+    // Button as text:
+
+    a.btn.btn-text, button.btn.btn-text {
+        background: transparent;
+        border-color: transparent;
+        color: $bluescale_50;
+        //font-size: $font_size_x_small;
+        padding: 0;
+        transition: color 0.25s;
+        width: auto;
+
+        &.non-blue {
+            color: $greyscale_70;
+        }
+        &.red {
+            color: $error;
+            &:hover{
+                color: $error_hover;
+            }
+        }
+    }
+
+    a.btn.btn-text:hover, button.btn.btn-text:hover {
+        box-shadow: none;
+        color: $bluescale_70;
+    }
+
+    a.btn.btn-text:focus, button.btn.btn-text:focus {
+        box-shadow: none;
+    }
+
+    a.btn.btn-text:active, button.btn.btn-text:active {
+        color: $ok;
+        transition: none;
+    }
+
+    // Label & optional icon:
+
+    .btn-icon {
+        padding-right: 0.5em;
+        svg {
+            display: inline-block;
+            height: 1.5em;
+            vertical-align: -0.25em;
+            width: 1.5em;
+        }
+    }
+
+    .btn-small {
+        .btn-icon {
+            svg {
+                height: 1.2em;
+                //vertical-align: -0.25em;
+                width: 1.2em;
+            }
+        }
+    }
+
+    .btn-label {}
+
+    .btn {
+        &.follow{
+            visibility: hidden;
+            background-color: $bluescale_60;
+            border-color: $bluescale_90;
+            color: $white;
+            text-shadow: 1px 1px 1px $greyscale_100;
+            background: linear-gradient($bluescale_60, $bluescale_90);
+            background: -webkit-linear-gradient($bluescale_60, $bluescale_90);
+            background: -o-linear-gradient($bluescale_60, $bluescale_90);
+            background: -moz-linear-gradient($bluescale_60, $bluescale_90);
+            &:after {
+                content: "Follow";
+            }
+            &:hover {
+                text-shadow: none;
+                border: 1px solid $white;
+            }
+            &:focus {
+                border-color: $bluescale_100;
+                box-shadow: 0 0 7px hsla(197, 100%, 30%, 0.75);
+            }
+            &:active {
+                border-color: $bluescale_100;
+            }
+            &.visible {
+                visibility: visible;
+            }
+        }
+        &.unfollow {
+            visibility: hidden;
+            &:after
+            {
+                content: "Following";
+            }
+            &.visible{
+                visibility: visible;
+            }
+        }
+    }
+
+    // Buttons with nested CSS-only spinners...
+
+    .btn-spinner {
+        box-sizing: border-box;
+        display: none;
+        left: 0;
+        height: 100%;
+        padding: 0.6rem; // ( height - spinner height) / 2
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .btn-small .btn-spinner {
+        padding: 0.4rem; // ( height - spinner height) / 2
+    }
+
+    .btn-waiting .btn-label {
+        visibility: hidden; // Maintain width of inline buttons
+    }
+
+    .btn-waiting .btn-spinner {
+        display: block;
+    }
+
+    .btn-waiting .btn-spinner > span:first-child {
+        -webkit-animation: btn_spin 0.5s infinite linear;
+                animation: btn_spin 0.5s infinite linear;
+        border: 3px solid $white !important;
+        border-left-color: transparent !important;
+        border-right-color: transparent !important;
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 1.1rem;
+        vertical-align: top;
+        width: 1.1rem;
+    }
+
+    .btn-primary .btn-spinner > span:first-child {
+        border: 3px solid $bluescale_90;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+
+    .hidden{
+        display: none !important;
+    }

@@ -11,6 +11,12 @@ import { configureStore } from './store';
 const store = configureStore(window.__INITIAL_STATE__);
 const mountApp = document.getElementById('root');
 
+// Material UI css
+require('muicss/lib/css/mui.css');
+
+// Base stylesheet
+require('styles/main.css');
+
 render(
   <AppContainer>
     <App store={store} />

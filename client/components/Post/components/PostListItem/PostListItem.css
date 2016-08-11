@@ -12,18 +12,21 @@
 }
 
 .post-title a{
+  font-family: "Gotham Book";
   text-decoration: none;
   color: #373435;
   font-size: 1.8rem;
 }
 
 .author-name{
+  font-family: "Sailec Regular";
   font-size: 1.6rem;
   color: #F44336;
   margin-left: 1.5rem;
 }
 
 .post-desc{
+  font-family: "Sailec Regular";
   font-size: 1.6rem;
   color: #373435;
   margin-bottom: 6px;

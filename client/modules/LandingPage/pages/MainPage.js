@@ -4,8 +4,6 @@
 import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
-
-
 // Import Components
 import Container from 'muicss/lib/react/container';
 import Row from 'muicss/lib/react/row';
@@ -38,7 +36,6 @@ class MainPage extends Component {
       postTitle: 'Po savaitės trukusios kelionės Vovos kailiai sugrįžta namo',
       postSubtitle: 'Liepos 22-24d. vyko futbolo čempionatas, kuriame laimėjom vienerias varžybas...',
     };
-    console.log(mockPost);
     return (
       <Container>
         <Row>

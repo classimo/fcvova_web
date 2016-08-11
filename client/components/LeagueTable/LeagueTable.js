@@ -8,7 +8,7 @@ import LeagueTableHeader from './components/LeagueTableHeader/BigLeagueTableHead
 import LeagueTableRow from './components/LeagueTableRow/LeagueTableRow';
 
 // Import Style
-import styles from './LeagueTable.css';
+import styles from '../../styles/main.css';
 
 function LeagueTable(props) {
   return (

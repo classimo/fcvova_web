@@ -9,7 +9,7 @@ export default function Logo() {
   return (
     <div className={style.Logo} >
       <Link className={style.Link} to="/">
-        <svg className={style['logo-svg']} viewBox="0 0 16000 16000">
+        <svg className={style['logo-svg']} viewBox="0 0 16000 16000" >
           <g>
             <path
               className={style.fil1}

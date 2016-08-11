@@ -25,7 +25,7 @@ function HeaderPhoto() {
   const divStyle = {
     height: '35em',
     color: 'white',
-    background: `url(${images[random]})`,
+    background: `url(${images[16]})`,
     backgroundPosition: 'top left',
     backgroundSize: 'cover',
     WebkitTransition: 'all',
