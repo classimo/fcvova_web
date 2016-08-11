@@ -8,4 +8,4 @@ dump.rdb
 #dist
 coverage/
 .nyc_output/
-#dist/
+dist/
