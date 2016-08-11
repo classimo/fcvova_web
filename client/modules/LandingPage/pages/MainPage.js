@@ -43,6 +43,8 @@ class MainPage extends Component {
             <Title><FormattedMessage id="news_title" /></Title>
             <HottestNews post={mockPost} />
             <PostsList posts={this.props.posts} />
+            <Title>VovaTV</Title>
+            <HottestNews post={mockPost} />
           </Col>
           <Col md="4">
             <Title><FormattedMessage id="nextGame" /></Title>
