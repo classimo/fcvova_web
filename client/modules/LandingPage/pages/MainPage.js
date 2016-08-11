@@ -4,7 +4,7 @@
 import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
-import Youtube from 'react-youtube';
+
 // Import Components
 import Container from 'muicss/lib/react/container';
 import Row from 'muicss/lib/react/row';
@@ -14,6 +14,7 @@ import LeagueTable from '../../../components/LeagueTable/LeagueTable';
 import HottestNews from '../../../components/HottestNews/HottestNews';
 import NextGame from '../../../components/NextGame/NextGame';
 import PostsList from '../../../components/Post/components/PostList';
+import Youtube from '../../../components/Youtube/Youtube';
 
 // Import Actions
 import { fetchLeagueTeams, fetchTeamFixtures, fetchPosts } from '../Actions';
@@ -37,8 +38,8 @@ class MainPage extends Component {
       postTitle: 'Po savaitės trukusios kelionės Vovos kailiai sugrįžta namo',
       postSubtitle: 'Liepos 22-24d. vyko futbolo čempionatas, kuriame laimėjom vienerias varžybas...',
     };
-    const opts = {
-      height:'50%',
+    const youtubeOpts = {
+      height: 'auto',
       width: '100%',
       playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 0
@@ -60,8 +61,12 @@ class MainPage extends Component {
             <PostsList posts={this.props.posts} />
             <Title><FormattedMessage id="vova_tv" /></Title>
             <Row>
-              <Col md="6"><Youtube opts={opts} videoId="xwzSIr7XFCI" /></Col>
-              <Col md="6"><Youtube opts={opts} videoId="xwzSIr7XFCI" /></Col>
+              <Col md="6">
+                <Youtube options={youtubeOpts} videoId="xwzSIr7XFCI" />
+              </Col>
+              <Col md="6">
+                <Youtube options={youtubeOpts} videoId="9FmgV1_dXxU" />
+              </Col>
             </Row>
             {/*<Title><FormattedMessage id="table_title" /></Title>*/}
           </Col>
