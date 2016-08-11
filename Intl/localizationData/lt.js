@@ -41,5 +41,6 @@ export default {
     table_title: 'Turnyrinė lentelė',
     news_title: 'Karščiausios naujienos',
     nextGame: 'Sekančios rungtynės',
+    vova_tv: 'VovaTV',
   },
 };

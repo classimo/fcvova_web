@@ -4,6 +4,7 @@
 import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
+import Youtube from 'react-youtube';
 // Import Components
 import Container from 'muicss/lib/react/container';
 import Row from 'muicss/lib/react/row';
@@ -36,6 +37,20 @@ class MainPage extends Component {
       postTitle: 'Po savaitės trukusios kelionės Vovos kailiai sugrįžta namo',
       postSubtitle: 'Liepos 22-24d. vyko futbolo čempionatas, kuriame laimėjom vienerias varžybas...',
     };
+    const opts = {
+      height:'50%',
+      width: '100%',
+      playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 0
+      }
+    };
+
+    const nextGameData = this.props.fixtures[0];
+    var nextGame;
+    if (nextGameData){
+      nextGame = <NextGame fixture = {nextGameData}/>;
+    }
+
     return (
       <Container>
         <Row>
@@ -43,12 +58,16 @@ class MainPage extends Component {
             <Title><FormattedMessage id="news_title" /></Title>
             <HottestNews post={mockPost} />
             <PostsList posts={this.props.posts} />
-            <Title>VovaTV</Title>
-            <HottestNews post={mockPost} />
+            <Title><FormattedMessage id="vova_tv" /></Title>
+            <Row>
+              <Col md="6"><Youtube opts={opts} videoId="xwzSIr7XFCI" /></Col>
+              <Col md="6"><Youtube opts={opts} videoId="xwzSIr7XFCI" /></Col>
+            </Row>
+            {/*<Title><FormattedMessage id="table_title" /></Title>*/}
           </Col>
           <Col md="4">
             <Title><FormattedMessage id="nextGame" /></Title>
-            <NextGame fixture={this.props.fixtures} />
+            {nextGame}
             <Title><FormattedMessage id="table_title" /></Title>
             <LeagueTable teams={this.props.teams} />
           </Col>
@@ -87,7 +106,7 @@ MainPage.propTypes = {
     points: PropTypes.number.isRequired,
     logo: PropTypes.string.isRequired
   })).isRequired,
-  fixtures: PropTypes.arrayOf({
+  fixtures: PropTypes.arrayOf(PropTypes.shape({
     homeTeamId: PropTypes.number.isRequired,
     awayTeamId: PropTypes.number.isRequired,
     leagueId: PropTypes.number.isRequired,
@@ -97,7 +116,7 @@ MainPage.propTypes = {
     awayTeamName: PropTypes.string.isRequired,
     homeTeamLogo: PropTypes.string.isRequired,
     awayTeamLogo: PropTypes.string.isRequired,
-  }).isRequired,
+  })).isRequired,
   posts: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,

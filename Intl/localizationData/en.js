@@ -41,6 +41,7 @@ export default {
     table_title : 'League table',
     news_title: 'Hottest news',
     nextGame: 'Next game',
+    vova_tv: 'VovaTV',
   },
 
 };

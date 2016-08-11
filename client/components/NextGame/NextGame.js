@@ -8,6 +8,7 @@ import styles from './NextGame.css';
 import { injectIntl, intlShape } from 'react-intl';
 
 function NextGame(props) {
+
   var date = new Date(props.fixture.date);
   var dateString = format('yyyy MM dd', date);
   var timeString = format('hh:mm', date)

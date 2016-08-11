@@ -2,7 +2,7 @@
  * Created by paulius on 03/08/16.
  */
 
-import { ADD_FIXTURES } from './Actions';
+import { ADD_FIXTURES, GET_NEXTGAME } from './Actions';
 
 // Initial State
 const initialState = { data: [] };

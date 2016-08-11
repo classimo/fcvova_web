@@ -31,9 +31,12 @@ export function addPosts(posts) {
 
 export function fetchTeamFixtures(teamId) {
   return (dispatch) => {
-    return callApi(`fixtures/${teamId}`).then(res => dispatch(addFixtures(res.fixtures)));
-  }
+    return callApi(`fixtures/${teamId}`).then(res => {
+      dispatch(addFixtures(res.fixtures));
+    });
+  };
 }
+
 export function fetchPosts() {
   return (dispatch) => {
     return callApi('posts').then(res => {
