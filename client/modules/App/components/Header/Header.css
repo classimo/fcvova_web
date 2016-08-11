@@ -25,7 +25,6 @@
   background: #03A9F4;
   padding: 8px 16px;
   text-decoration: none;
-  border-radius: 1000px;
   float: right; }
 
 .language-switcher {
@@ -33,7 +32,7 @@
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 33;
+  z-index: 33 !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
 .language-switcher ul {

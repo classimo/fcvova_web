@@ -4,7 +4,7 @@
   height: 10rem;
   background-color: #373435;
   border-radius: 100%;
-  z-index: 3;
+  z-index: 23;
   .logo-svg{
     margin-top: .3rem;
     margin-right: .3rem;
@@ -29,7 +29,6 @@
     }
     .fil0 {
       fill:#373435;
-
     }
     .inner {fill:#373435;}
     .inner-group {
@@ -38,7 +37,6 @@
   }
   box-shadow: 0 2px 7px .5px rgba(0,0,0,.55);
   &:hover{
-
     box-shadow: 0 3px 10px 1px rgba(0,0,0,.48);
     -webkit-transition: .2s ease-in-out;
     -moz-transition: .2s ease-in-out;

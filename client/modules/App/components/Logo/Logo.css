@@ -4,7 +4,7 @@
   height: 10rem;
   background-color: #373435;
   border-radius: 100%;
-  z-index: 3;
+  z-index: 23 !important;
   box-shadow: 0 2px 7px 0.5px rgba(0, 0, 0, 0.55); }
   .Logo .logo-svg {
     margin-top: .3rem;
