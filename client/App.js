@@ -13,7 +13,7 @@ import routes from './routes';
 require('muicss/lib/css/mui.css');
 
 // Base stylesheet
-require('styles/main.css');
+import styles from 'styles/main.css';
 
 export default function App(props) {
   return (
