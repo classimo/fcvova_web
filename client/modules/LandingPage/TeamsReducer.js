@@ -1,12 +1,12 @@
 /* Selectors */
-import { ADD_TEAMS } from './Actions';
+import { GET_LEAGUE_TEAMS } from './Actions';
 
 // Initial State
 const initialState = { data: [] };
 
 const TeamsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_TEAMS :
+    case GET_LEAGUE_TEAMS :
       return {
         data: action.teams,
       };

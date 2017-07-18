@@ -1,13 +1,12 @@
+@import "../../styles/variables";
 .LeagueTable {
-  color: #373435;
+  color: $greyscale_800;
   margin: 1.5rem 0;
   font-family: "Sailec Regular";
     table{
         border-collapse: collapse;
         text-align: left;
-        //box-shadow: 0 1px 7px .5px rgba(0,0,0,.45);
         border-radius: .3em;
-
         thead{
             tr{
                 th{
@@ -15,19 +14,11 @@
                       line-height: 1rem;
                       padding: 1rem 1rem 1rem 1rem;
                       display: block;
-                      font-size: 1.6rem;
+                      font-size: $font_size_default;
                     }
-                    //background: #f6f6f6;
-
-                    &:first-child{
-                      border-top-left-radius: .3em;
-                    }
-                    &:last-child{
-                      border-top-right-radius: .3em;
-                    }
-                  img{
-                    height: 7rem;
-                    padding: 0 0 .4rem 1.6rem;
+                    img{
+                      height: 7rem;
+                      padding: 0 0 .4rem 1.6rem;
                   }
                 }
             }
@@ -41,7 +32,6 @@
                     display: block;
                     font-size: 1.6rem;
                   }
-                    //background: #f6f6f6;
                     img{
                       max-height: 2.8rem;
                       display: block;
@@ -49,7 +39,6 @@
                   &:first-child{
                     span{
                       padding-left: 1.4rem;
-
                     }
                   }
                   &:last-child{
@@ -58,20 +47,14 @@
                     }
                   }
                 }
-
-                &:nth-child(2n-1){
-                    td{
-                        //background: #ececec;
-                    }
-                }
                 &:nth-child(3){
                    td{
-                        border-bottom: 1px solid #F44336!important;
+                        border-bottom: 1px solid $redscale_200 !important;
                    }
                 }
                 &:nth-child(9){
                     td{
-                        border-bottom: 1px solid #dbdbdb !important;
+                        border-bottom: 1px solid $greyscale_400 !important;
                     }
                 }
                 &:last-child{

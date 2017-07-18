@@ -7,7 +7,7 @@ import styles from './PostListItem.css';
 
 function PostListItem(props) {
   return (
-    <div className={styles['single-post']}>
+    <div className={styles['PostListItem']}>
       <h4 className={styles['post-title']}>
         <Link to={`/posts/${props.post.slug}-${props.post.cuid}`} >
           {props.post.title}
@@ -16,7 +16,12 @@ function PostListItem(props) {
 
       <h5 className={styles['post-desc']}>{props.post.subTitle}</h5>
       {/*<p className={styles['post-action']}><a href="#" onClick={props.onDelete}>{props.intl.messages.deletePost}</a></p>*/}
-      <p className={styles['author-name']}> {props.intl.messages.readMore}</p>
+
+      <h6 className={styles['read-more']}>
+        <Link to={`/posts/${props.post.slug}-${props.post.cuid}`} >
+          {props.intl.messages.readMore}
+        </Link>
+      </h6>
       <hr className={styles.divider} />
     </div>
   );

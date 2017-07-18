@@ -1,0 +1,66 @@
+@import "../../../../styles/variables";
+
+.PostListItem {
+  margin: 0;
+  padding: 1.2rem 0;
+  border-radius: 2px;
+
+  .post-title {
+    font-weight: 700;
+    margin: 0 0 0 1.5rem;
+    a {
+      font-family: "Gotham Book";
+      color: $greyscale_800;
+      font-size: $font_size_large;
+      &:hover {
+        color: $greyscale_800;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .read-more{
+    a{
+      font-family: "Sailec Regular";
+      font-size: $font_size_default;
+      font-weight: 400;
+      color: $redscale_400;
+      margin-left: 1.5rem;
+      }
+  }
+
+  .post-desc{
+    font-family: "Sailec Regular";
+    font-size: 1.6rem;
+    color: $greyscale_700;
+    margin: .8rem 0 0.6rem 1.5rem;
+  }
+
+  //.post-action a{
+  //  color: $greyscale_700;
+  //  font-size: 16px;
+  //  font-style: italic;
+  //}
+  //
+  //.post-action a:hover{
+  //  color: #EF5350;
+  //}
+
+  .divider{
+    border: 0;
+    height: 1px;
+    background: $greyscale_400;
+    width: 100%;
+    margin: 1.4rem 0 0;
+  }
+
+  //.post-detail .post-title{
+  //  font-size: 42px;
+  //  color: #555;
+  //}
+  //
+  //.post-detail .post-desc{
+  //  font-size: 16px;
+  //  color: #555;
+  //}
+}

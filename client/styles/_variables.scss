@@ -1,0 +1,65 @@
+
+// ==============
+// Sass variables
+// ==============
+
+$white:               #fff;
+$background:          #373435;
+//$key_lines:           #d9d9d9;
+
+
+$greyscale_50:         #FAFAFA;
+$greyscale_100:        #F5F5F5;
+$greyscale_200:        #EEEEEE;
+$greyscale_300:        #E0E0E0;
+$greyscale_400:        #BDBDBD;
+$greyscale_500:        #9E9E9E;
+$greyscale_600:        #757575;
+$greyscale_700:        #616161;
+$greyscale_800:        #424242;
+$greyscale_900:        #212121;
+
+$redscale_50:         #FFEBEE;
+$redscale_100:        #FFCDD2;
+$redscale_200:        #EF9A9A;
+$redscale_300:        #E57373;
+$redscale_400:        #EF5350;
+$redscale_500:        #F44336;
+$redscale_600:        #E53935;
+$redscale_700:        #D32F2F;
+$redscale_800:        #C62828;
+$redscale_900:        #B71C1C;
+
+$font_size_title:       2rem;
+$font_size_large:       1.8rem;
+$font_size_default:     1.6rem;
+$font_size_small:       1.4rem;
+$font_size_x_small:     1.2rem;
+$font_size_xx_small:    1rem;
+
+
+$greenscale_40:       hsl(147, 87%, 44%);
+$greenscale_60:       hsl(147, 87%, 24%);
+
+$highlight_0:         hsl(53, 93%, 97%);
+$highlight_30:        hsl(53, 93%, 76%);
+$highlight_50:        hsl(53, 85%, 72%);
+$highlight_70:        hsl(52, 79%, 66%);
+$highlight_90:        hsl(52, 73%, 64%);
+$ok:                  hsl(148, 100%, 41%);
+$error:               hsl(359, 90%, 60%);
+$error_hover:         hsl(359, 90%, 40%);
+
+// For the Progress widget:
+$equity:              hsl(148, 100%, 41%);
+$equity_dark:         hsl(148, 100%, 35%);
+$equity_darker:       hsl(148, 94%, 32%);
+$equity_lighter:      hsl(148, 100%, 46%);
+$equity_lightest:     hsl(148, 100%, 70%);
+$debt:                hsl(197, 100%, 42%);
+$debt_dark:           hsl(197, 100%, 38%);
+$debt_darker:         hsl(197, 100%, 34%);
+$debt_lighter:        hsl(197, 100%, 47%);
+$debt_lightest:       hsl(197, 100%, 71%);
+
+

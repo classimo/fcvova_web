@@ -4,27 +4,27 @@
 
 import callApi from '../../util/apiCaller';
 
-export const ADD_TEAMS = 'ADD_TEAMS';
-export const ADD_FIXTURES = 'ADD_FIXTURES';
-export const ADD_POSTS = 'ADD_POSTS';
+export const GET_LEAGUE_TEAMS = 'GET_LEAGUE_TEAMS';
+export const GET_FIXTURES = 'GET_FIXTURES';
+export const GET_POSTS = 'GET_POSTS';
 
 export function addTeams(teams) {
   return {
-    type: ADD_TEAMS,
+    type: GET_LEAGUE_TEAMS,
     teams,
   };
 }
 
 export function addFixtures(fixtures) {
   return {
-    type: ADD_FIXTURES,
+    type: GET_FIXTURES,
     fixtures,
   }
 }
 
 export function addPosts(posts) {
   return {
-    type: ADD_POSTS,
+    type: GET_POSTS,
     posts,
   };
 }

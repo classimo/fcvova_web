@@ -1,19 +1,21 @@
+@import "../../styles/variables";
 .NextGame{
+  color: $greyscale_800;
   font-family: "Sailec Regular";
   padding: 0 1.5rem;
   margin: 1.5rem 0;
   width: 100%;
   height: 100%;
   span {
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: $font_size_default;
     width: 100%;
     display: block;
     margin: .5rem 0;
     //letter-spacing: 1.25px;
     &.time {
-      color: #F44336;
+      color: $redscale_400;
     }
   }
   .team-logos{
@@ -35,7 +37,7 @@
     }
     .vs{
       font-weight: bold;
-      font-size: 2rem;
+      font-size: $font_size_title;
       display: inline-block;
       width: 33.3%;
       text-align: center;

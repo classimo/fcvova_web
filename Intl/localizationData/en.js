@@ -42,6 +42,7 @@ export default {
     news_title: 'Hottest news',
     nextGame: 'Next game',
     vova_tv: 'VovaTV',
+    login: "Log in"
   },
 
 };

@@ -7,7 +7,7 @@
   .HottestNews .cover {
     position: absolute;
     bottom: 0;
-    background: rgba(55, 52, 53, 0.85);
+    background-color: rgba(55, 52, 53, 0.85);
     width: 100%;
     color: #fff; }
     .HottestNews .cover h4 {

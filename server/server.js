@@ -4,6 +4,9 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import path from 'path';
 import IntlWrapper from '../client/modules/Intl/IntlWrapper';
+import jwt from 'jsonwebtoken';
+import morgan from 'morgan';
+
 
 // Webpack Requirements
 import webpack from 'webpack';
@@ -13,6 +16,7 @@ import webpackHotMiddleware from 'webpack-hot-middleware';
 
 // Initialize the Express App
 const app = new Express();
+const apiRoutes = Express.Router();
 
 // Run Webpack dev server in development mode
 if (process.env.NODE_ENV === 'development') {
@@ -36,8 +40,11 @@ import posts from './routes/post.routes';
 import teams from './routes/team.routes';
 import fixtures from './routes/fixture.routes';
 import stadiums from './routes/stadium.routes';
+import authenticate from './routes/secure/authenticate.routes';
+import tokenVerification from './routes/secure/tokenVerification.routes';
+import users from './routes/secure/user.routes';
 import serverConfig from './config';
-
+import User from './models/user';
 // MongoDB Connection
 mongoose.connect(serverConfig.MONGODB_URI, (error) => {
   if (error) {
@@ -56,6 +63,20 @@ app.use('/api', posts);
 app.use('/api', teams);
 app.use('/api', fixtures);
 app.use('/api', stadiums);
+app.use('/api/secure', authenticate);
+app.use('/api/secure', tokenVerification);
+app.use('/api/secure', users);
+
+
+
+
+apiRoutes.get('/', function(req, res) {
+  res.json({ message: 'Welcome to the coolest API on earth!' });
+});
+
+
+
+app.use('/api/secure', apiRoutes);
 
 // Render Initial HTML
 const renderFullPage = (html, initialState) => {
@@ -141,7 +162,7 @@ app.use((req, res, next) => {
 // start app
 app.listen(serverConfig.port, (error) => {
   if (!error) {
-    console.log(`MERN is running on port: ${serverConfig.port}! Build something amazing!`); // eslint-disable-line
+    console.log(`Magic happens at http://localhost: ${serverConfig.port}`); // eslint-disable-line
   }
 });
 

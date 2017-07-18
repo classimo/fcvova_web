@@ -1,7 +1,5 @@
 /**
  * Created by paulius on 27/07/16.
- *//**
- * Created by paulius on 27/07/16.
  */
 import React from 'react';
 import { FormattedMessage } from 'react-intl';

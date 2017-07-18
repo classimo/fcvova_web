@@ -10,7 +10,7 @@ function LeagueTableRow(props) {
     let pathToImageSource = `../images/teamLogos/${props.team.logo}`;
     logo = <img src={pathToImageSource} alt="" />;
   }
-  var vova = props.team.name === 'FC Vova' ? { fontWeight: 'bold', color: '#F44336' } : null;
+  var vova = props.team.name === 'FC Vova' ? { fontWeight: 'bold', color: '#FF5252' } : null;
   return (
     <tr>
       <td><span style={vova}>{props.position}</span></td>

@@ -42,5 +42,6 @@ export default {
     news_title: 'Karščiausios naujienos',
     nextGame: 'Sekančios rungtynės',
     vova_tv: 'VovaTV',
+    login: "Prisijungimas"
   },
 };

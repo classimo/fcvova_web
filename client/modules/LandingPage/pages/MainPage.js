@@ -5,6 +5,7 @@ import React, { PropTypes, Component } from 'react';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 
+
 // Import Components
 import Container from 'muicss/lib/react/container';
 import Row from 'muicss/lib/react/row';
@@ -15,13 +16,15 @@ import HottestNews from '../../../components/HottestNews/HottestNews';
 import NextGame from '../../../components/NextGame/NextGame';
 import PostsList from '../../../components/Post/components/PostList';
 import Youtube from '../../../components/Youtube/Youtube';
+import LoginBox from '../../../components/LoginBox/LoginBox';
+
 
 // Import Actions
 import { fetchLeagueTeams, fetchTeamFixtures, fetchPosts } from '../Actions';
 
 // Import Selectors
 import { getLeagueTeams } from '../TeamsReducer';
-import { getNextTeamFixture, getTeamFixtures } from '../FixturesReducer';
+import { getTeamFixtures } from '../FixturesReducer';
 import { getPosts } from '../PostReducer';
 
 class MainPage extends Component {
@@ -75,6 +78,8 @@ class MainPage extends Component {
             {nextGame}
             <Title><FormattedMessage id="table_title" /></Title>
             <LeagueTable teams={this.props.teams} />
+            <Title><FormattedMessage id="login"/></Title>
+            <LoginBox />
           </Col>
         </Row>
       </Container>

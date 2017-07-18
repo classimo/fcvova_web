@@ -1,3 +1,4 @@
+@import "variables";
 *{
   margin: 0;
   padding: 0;
@@ -28,9 +29,8 @@ input:-moz-placeholder {
 }
 
 body {
-  background-color: #e9eaed !important;
+  background-color: $greyscale_200 !important;
   //font-family: "Gotham Book", sans-serif;
   //font-size: 14px;
-  color: #373435;
-
+  //color: #555 !important; //#403e41
 }
